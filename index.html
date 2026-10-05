@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <div class="app">
+
+  <!-- =====================================================
+       BARRA SUPERIOR
+  ====================================================== -->
+
+  <header class="topbar">
+
+    <div class="brand">
+      <div class="brand-icon">🫁</div>
+
+      <div>
+        <h1>iVent™201</h1>
+        <span>Plataforma de gestión biomédica</span>
+      </div>
+    </div>
+
+    <div class="status">
+      <span class="status-dot"></span>
+      Equipo operativo
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       CONTENEDOR PRINCIPAL
+  ====================================================== -->
+
+  <div class="layout">
+
+
+    <!-- ===================================================
+         MENÚ LATERAL
+    ==================================================== -->
+
+    <aside class="sidebar">
+
+      <nav>
+
+        <button class="menu-item active"
+          onclick="showSection('inicio', this)">
+          🏠 <span>Inicio</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('equipo', this)">
+          🫁 <span>Equipo</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('componentes', this)">
+          ⚙️ <span>Componentes</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('mantenimiento', this)">
+          🔧 <span>Mantenimiento</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('alarmas', this)">
+          🚨 <span>Alarmas y seguridad</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('ficha', this)">
+          📋 <span>Ficha técnica</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('asistente', this)">
+          🤖 <span>Asistente IA</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('manual', this)">
+          📖 <span>Manual técnico</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('qr', this)">
+          📱 <span>Código QR</span>
+        </button>
+
+        <button class="menu-item"
+          onclick="showSection('acerca', this)">
+          ℹ️ <span>Acerca del proyecto</span>
+        </button>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- ===================================================
+         CONTENIDO
+    ==================================================== -->
+
+    <main class="main-content">
+
+
+      <!-- =================================================
+           INICIO
+      ================================================== -->
+
+      <section id="inicio" class="section active-section">
+
+        <div class="welcome">
+
+          <div>
+
+            <p class="eyebrow">
+              INGENIERÍA BIOMÉDICA
+            </p>
+
+            <h2>
+              Plataforma de gestión<br>
+              del ventilador <strong>iVent™201</strong>
+            </h2>
+
+            <p class="description">
+              Herramienta académica para la consulta de
+              información técnica, funcionamiento,
+              mantenimiento, componentes, seguridad y
+              gestión del equipo biomédico.
+            </p>
+
+            <button
+              class="primary-btn"
+              onclick="showSection('equipo', document.querySelectorAll('.menu-item')[1])">
+
+              Explorar equipo →
+
+            </button>
+
+          </div>
+
+
+          <!-- =============================================
+               FOTO DEL iVENT 201
+          ============================================== -->
+
+          <div class="ventilator-card">
+
+            <img
+              src="https://storage.googleapis.com/avante/images/2247-1-ge-versamed-ivent-201.jpg"
+              alt="Ventilador GE VersaMed iVent 201"
+              style="
+                width:100%;
+                max-width:320px;
+                height:280px;
+                object-fit:contain;
+                display:block;
+                margin:0 auto 15px auto;
+                border-radius:14px;
+              "
+            >
+
+            <div class="ventilator-label">
+              VENTILACIÓN MECÁNICA
+            </div>
+
+            <div class="ventilator-model">
+              iVent™201
+            </div>
+
+            <div class="ventilator-line"></div>
+
+            <span>
+              Ventilador pulmonar portátil
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- TARJETAS INFORMATIVAS -->
+
+        <div class="cards">
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              ⚙️
+            </div>
+
+            <h3>
+              Componentes
+            </h3>
+
+            <p>
+              Consulta los principales elementos neumáticos,
+              electrónicos, sensores y sistemas que conforman
+              el equipo.
+            </p>
+
+            <button
+              onclick="showSection('componentes', document.querySelectorAll('.menu-item')[2])">
+
+              Ver componentes
+
+            </button>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              🔧
+            </div>
+
+            <h3>
+              Mantenimiento
+            </h3>
+
+            <p>
+              Consulta los intervalos de mantenimiento,
+              verificaciones, calibraciones y actividades
+              de gestión biomédica.
+            </p>
+
+            <button
+              onclick="showSection('mantenimiento', document.querySelectorAll('.menu-item')[3])">
+
+              Ver mantenimiento
+
+            </button>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              🤖
+            </div>
+
+            <h3>
+              Asistente IA
+            </h3>
+
+            <p>
+              Consulta información técnica del iVent™201
+              utilizando un asistente basado en el manual.
+            </p>
+
+            <button
+              onclick="showSection('asistente', document.querySelectorAll('.menu-item')[6])">
+
+              Consultar asistente
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           EQUIPO
+      ================================================== -->
+
+      <section id="equipo" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            INFORMACIÓN DEL EQUIPO
+          </p>
+
+          <h2>
+            Ventilador iVent™201
+          </h2>
+
+          <p>
+            Características generales, funcionamiento y
+            aplicaciones del ventilador pulmonar.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              🫁
+            </div>
+
+            <h3>
+              Descripción
+            </h3>
+
+            <p>
+              El iVent™201 es un ventilador pulmonar
+              portátil controlado por microprocesador
+              y accionado mediante una turbina eléctrica
+              interna.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              ⚙️
+            </div>
+
+            <h3>
+              Funcionamiento
+            </h3>
+
+            <p>
+              Utiliza control electrónico de flujo,
+              presión, volumen y tiempo mediante sensores,
+              válvulas neumáticas y una turbina BLDC.
+            </p>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <div class="card-icon">
+              🏥
+            </div>
+
+            <h3>
+              Aplicaciones
+            </h3>
+
+            <p>
+              Puede utilizarse en cuidados intensivos,
+              emergencias, recuperación, transporte
+              y atención domiciliaria.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="technical-table">
+
+          <div class="row">
+            <span>Tipo de equipo</span>
+            <strong>Ventilador pulmonar portátil</strong>
+          </div>
+
+          <div class="row">
+            <span>Control</span>
+            <strong>Microprocesador</strong>
+          </div>
+
+          <div class="row">
+            <span>Generación de flujo</span>
+            <strong>Turbina eléctrica BLDC</strong>
+          </div>
+
+          <div class="row">
+            <span>Ventilación</span>
+            <strong>Invasiva y no invasiva</strong>
+          </div>
+
+          <div class="row">
+            <span>Pacientes</span>
+            <strong>Pediátricos y adultos ≥ 10 kg</strong>
+          </div>
+
+          <div class="row">
+            <span>Uso neonatal</span>
+            <strong>No destinado a pacientes neonatales</strong>
+          </div>
+
+          <div class="row">
+            <span>FiO₂</span>
+            <strong>21 % – 100 %</strong>
+          </div>
+
+          <div class="row">
+            <span>Flujo máximo al paciente</span>
+            <strong>Hasta 120 L/min</strong>
+          </div>
+
+          <div class="row">
+            <span>PEEP / CPAP</span>
+            <strong>0 – 40 cmH₂O</strong>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           COMPONENTES
+      ================================================== -->
+
+      <section id="componentes" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            SISTEMA DEL EQUIPO
+          </p>
+
+          <h2>
+            Componentes principales
+          </h2>
+
+          <p>
+            Elementos neumáticos, electrónicos y de
+            medición que participan en el funcionamiento
+            del ventilador.
+          </p>
+
+        </div>
+
+
+        <div class="component-grid">
+
+          <div class="component">
+            <span>01</span>
+            <h3>Sistema neumático</h3>
+            <p>
+              Incluye filtro de entrada, manifold,
+              turbina, sistema de mezcla de oxígeno,
+              electroválvulas, sensores, válvula de
+              exhalación y válvula de alivio.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>02</span>
+            <h3>Turbina / BLDC</h3>
+            <p>
+              Motor Brushless DC que acciona la turbina
+              para generar el flujo de gas. Puede superar
+              las 30.000 RPM.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>03</span>
+            <h3>Válvula proporcional de O₂</h3>
+            <p>
+              Regula la cantidad de oxígeno de alta presión
+              que ingresa al sistema de mezcla para controlar
+              la concentración de FiO₂.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>04</span>
+            <h3>Válvula Dump / Bypass</h3>
+            <p>
+              Permite liberar o desviar flujo neumático y
+              participa en el control de presión durante las
+              transiciones respiratorias.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>05</span>
+            <h3>Sensores de flujo</h3>
+            <p>
+              Los sensores internos y el sensor ubicado en
+              la pieza Y permiten medir flujo y contribuir
+              al cálculo del volumen corriente.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>06</span>
+            <h3>Sensores de presión</h3>
+            <p>
+              Miden la presión de la vía aérea y proporcionan
+              información para el control de presión, PEEP
+              y alarmas.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>07</span>
+            <h3>Celda galvánica de O₂</h3>
+            <p>
+              Sensor electroquímico utilizado para verificar
+              la concentración de oxígeno suministrada.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>08</span>
+            <h3>Tarjeta CPU</h3>
+            <p>
+              Ejecuta los algoritmos de ventilación,
+              procesa sensores, controla alarmas y gestiona
+              la interfaz del usuario.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>09</span>
+            <h3>Power / Driver Board</h3>
+            <p>
+              Gestiona alimentación, batería, control del
+              motor BLDC y accionamiento de electroválvulas.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>10</span>
+            <h3>Zero / Purge</h3>
+            <p>
+              Sistema neumático destinado a operaciones
+              de purga e igualación de presión para el
+              auto-cero de sensores.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>11</span>
+            <h3>Interfaz de usuario</h3>
+            <p>
+              Pantalla TFT a color de 8.4 pulgadas,
+              pantalla táctil, encoder giratorio y
+              teclas de acceso directo.
+            </p>
+          </div>
+
+
+          <div class="component">
+            <span>12</span>
+            <h3>Alimentación eléctrica</h3>
+            <p>
+              Dispone de alimentación AC, entrada DC externa
+              y batería interna recargable.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           MANTENIMIENTO
+      ================================================== -->
+
+      <section id="mantenimiento" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            GESTIÓN BIOMÉDICA
+          </p>
+
+          <h2>
+            Mantenimiento preventivo
+          </h2>
+
+          <p>
+            Actividades e intervalos establecidos en la
+            información técnica del equipo.
+          </p>
+
+        </div>
+
+
+        <div class="maintenance-box">
+
+          <div class="maintenance-status">
+
+            <span class="big-check">
+              ✓
+            </span>
+
+            <div>
+
+              <h3>
+                Programa de mantenimiento
+              </h3>
+
+              <p>
+                El mantenimiento periódico permite conservar
+                la precisión de ventilación y detectar
+                oportunamente condiciones que puedan afectar
+                la seguridad y funcionamiento del equipo.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="maintenance-list">
+
+            <div>
+              <strong>
+                Cada cambio de paciente / diariamente
+              </strong>
+
+              <span>
+                Revisar circuito del paciente, filtro
+                bacteriano y realizar OVT cuando corresponda.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>
+                Cada 500 horas / mensualmente
+              </strong>
+
+              <span>
+                Inspeccionar el filtro de entrada de aire
+                y reemplazarlo si se encuentra sucio,
+                deteriorado o descolorido.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>
+                Cada 1.500 horas / 6 meses
+              </strong>
+
+              <span>
+                Revisar sensores y válvulas neumáticas y
+                realizar verificaciones y calibraciones
+                de flujo, presión y oxígeno.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>
+                Cada 3.000 horas / 12 meses
+              </strong>
+
+              <span>
+                Realizar mantenimiento general, VVT,
+                inspección de batería, filtro, celda
+                de O₂ y elementos neumáticos.
+              </span>
+            </div>
+
+
+            <div>
+              <strong>
+                Cada 15.000 horas / 3–5 años
+              </strong>
+
+              <span>
+                Mantenimiento mayor del sistema neumático,
+                turbina y revisión preventiva de batería
+                según procedimiento técnico.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="technical-table">
+
+          <div class="row">
+            <span>OVT</span>
+            <strong>
+              Operator Verification Test
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>VVT</span>
+            <strong>
+              Ventilator Verification Test
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Calibración de presión</span>
+            <strong>
+              Cero y presión de referencia
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Calibración de flujo</span>
+            <strong>
+              Flujos de referencia y compensación
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Calibración de O₂</span>
+            <strong>
+              Referencias de 21 % y 100 %
+            </strong>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           ALARMAS Y SEGURIDAD
+      ================================================== -->
+
+      <section id="alarmas" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            SEGURIDAD
+          </p>
+
+          <h2>
+            Alarmas y seguridad
+          </h2>
+
+          <p>
+            Principales condiciones de alarma y aspectos
+            de seguridad relacionados con el equipo.
+          </p>
+
+        </div>
+
+
+        <div class="alert-grid">
+
+          <div class="alert-card warning">
+
+            <div>⚠️</div>
+
+            <h3>
+              Alta presión
+            </h3>
+
+            <p>
+              Puede relacionarse con obstrucciones,
+              acodamientos, secreciones, mordida del tubo
+              o problemas del circuito.
+            </p>
+
+          </div>
+
+
+          <div class="alert-card danger">
+
+            <div>🚨</div>
+
+            <h3>
+              Apnea
+            </h3>
+
+            <p>
+              Se presenta cuando no se detecta respiración
+              o esfuerzo inspiratorio dentro del tiempo
+              configurado.
+            </p>
+
+          </div>
+
+
+          <div class="alert-card warning">
+
+            <div>🔌</div>
+
+            <h3>
+              Desconexión
+            </h3>
+
+            <p>
+              Puede indicar desconexión o una fuga importante
+              en el circuito respiratorio.
+            </p>
+
+          </div>
+
+
+          <div class="alert-card warning">
+
+            <div>📉</div>
+
+            <h3>
+              Bajo volumen minuto
+            </h3>
+
+            <p>
+              Puede estar relacionado con fugas,
+              condiciones del paciente, compliance o
+              problemas del sensor de flujo.
+            </p>
+
+          </div>
+
+
+          <div class="alert-card danger">
+
+            <div>💨</div>
+
+            <h3>
+              FiO₂ alta / baja
+            </h3>
+
+            <p>
+              Puede estar relacionada con el suministro
+              de O₂, válvula proporcional, celda de O₂
+              o calibración.
+            </p>
+
+          </div>
+
+
+          <div class="alert-card safe">
+
+            <div>🔋</div>
+
+            <h3>
+              Batería baja
+            </h3>
+
+            <p>
+              Se debe conectar el equipo a una fuente
+              de alimentación AC o DC disponible.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="technical-table">
+
+          <div class="row">
+            <span>Alta prioridad</span>
+            <strong>
+              LED rojo intermitente + señal audible
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Prioridad media</span>
+            <strong>
+              LED amarillo intermitente + señal audible
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Oxígeno</span>
+            <strong>
+              Mantener alejado de llamas, chispas,
+              aceites y grasas
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Seguridad eléctrica</span>
+            <strong>
+              No retirar cubiertas con el equipo conectado
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Limpieza</span>
+            <strong>
+              Evitar ingreso de líquidos al equipo
+            </strong>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           FICHA TÉCNICA
+      ================================================== -->
+
+      <section id="ficha" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            DOCUMENTACIÓN
+          </p>
+
+          <h2>
+            Ficha técnica
+          </h2>
+
+          <p>
+            Principales especificaciones técnicas del
+            iVent™201.
+          </p>
+
+        </div>
+
+
+        <div class="technical-table">
+
+          <div class="row">
+            <span>Modelo</span>
+            <strong>iVent™201</strong>
+          </div>
+
+          <div class="row">
+            <span>Fabricante</span>
+            <strong>
+              GE Medical Systems Israel Ltd - VersaMed Business
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Tipo</span>
+            <strong>
+              Ventilador pulmonar portátil
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Dimensiones</span>
+            <strong>
+              33 × 24 × 26 cm
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Peso</span>
+            <strong>
+              12.6 kg con batería estándar
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Alimentación AC</span>
+            <strong>
+              100–240 VAC, 50/60 Hz
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Alimentación DC</span>
+            <strong>
+              12–15 VDC, hasta 8.5 A
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Batería</span>
+            <strong>
+              Interna recargable
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Autonomía</span>
+            <strong>
+              Aproximadamente 2 h estándar / hasta 4 h según versión
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Volumen corriente</span>
+            <strong>
+              50–2000 mL
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Frecuencia respiratoria</span>
+            <strong>
+              1–80 respiraciones/min
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Tiempo inspiratorio</span>
+            <strong>
+              0.2–3.0 s
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Presión inspiratoria</span>
+            <strong>
+              5–80 cmH₂O
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Presión de soporte</span>
+            <strong>
+              0–60 cmH₂O
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>PEEP / CPAP</span>
+            <strong>
+              0–40 cmH₂O
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>FiO₂</span>
+            <strong>
+              21–100 %
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Trigger de flujo</span>
+            <strong>
+              1–20 L/min
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Trigger de presión</span>
+            <strong>
+              -0.5 a -20 cmH₂O
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Temperatura de operación</span>
+            <strong>
+              -10 °C a 50 °C
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Humedad</span>
+            <strong>
+              10–95 % sin condensación
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Altitud</span>
+            <strong>
+              Hasta aproximadamente 4000 m
+            </strong>
+          </div>
+
+          <div class="row">
+            <span>Protección</span>
+            <strong>
+              IPX1
+            </strong>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           ASISTENTE IA
+      ================================================== -->
+
+      <section id="asistente" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            ASISTENCIA BIOMÉDICA
+          </p>
+
+          <h2>
+            Asistente IA del iVent™201
+          </h2>
+
+          <p>
+            Asistente de consulta basado en la información
+            técnica del manual.
+          </p>
+
+        </div>
+
+
+        <div class="ai-container">
+
+          <div class="ai-header">
+
+            <div class="ai-avatar">
+              🤖
+            </div>
+
+            <div>
+
+              <h3>
+                Asistente iVent™201
+              </h3>
+
+              <span>
+                Consulta técnica
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div id="chatMessages" class="chat-messages">
+
+            <div class="message bot">
+
+              <div class="message-avatar">
+                🤖
+              </div>
+
+              <div class="message-text">
+
+                Hola. Soy el asistente de consulta
+                del iVent™201.
+
+                Puedes preguntarme sobre mantenimiento,
+                alarmas, componentes, alimentación,
+                batería, ventilación y especificaciones
+                técnicas.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="quick-questions">
+
+            <button
+              onclick="askAI('¿Cuánto dura la batería del iVent 201?')">
+              🔋 Batería
+            </button>
+
+            <button
+              onclick="askAI('¿Cada cuánto se cambia el filtro?')">
+              🔧 Mantenimiento
+            </button>
+
+            <button
+              onclick="askAI('¿Qué significa la alarma de alta presión?')">
+              🚨 Alarmas
+            </button>
+
+            <button
+              onclick="askAI('¿Cuál es la alimentación eléctrica?')">
+              ⚡ Alimentación
+            </button>
+
+          </div>
+
+
+          <div class="chat-input">
+
+            <input
+              type="text"
+              id="aiInput"
+              placeholder="Escribe tu pregunta sobre el iVent™201..."
+            >
+
+            <button
+              onclick="askAI()">
+              Enviar
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           MANUAL
+      ================================================== -->
+
+      <section id="manual" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            DOCUMENTACIÓN TÉCNICA
+          </p>
+
+          <h2>
+            Manual del iVent™201
+          </h2>
+
+          <p>
+            Documento de referencia técnica del equipo.
+          </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+          <div class="card-icon">
+            📖
+          </div>
+
+          <h3>
+            iVent™201 Technical Reference Manual
+          </h3>
+
+          <p>
+            Manual técnico utilizado como fuente principal
+            para la información presentada en esta plataforma.
+          </p>
+
+
+          <div class="student">
+
+            <span>
+              FABRICANTE
+            </span>
+
+            <strong>
+              GE Medical Systems Israel Ltd -
+              VersaMed Business
+            </strong>
+
+            <br><br>
+
+            <span>
+              DOCUMENTO
+            </span>
+
+            <strong>
+              DOC0951990 Rev. 3
+            </strong>
+
+            <br><br>
+
+            <span>
+              PUBLICACIÓN
+            </span>
+
+            <strong>
+              Abril de 2011
+            </strong>
+
+          </div>
+
+
+          <p>
+            El manual técnico se encuentra disponible
+            para consulta mediante el siguiente botón.
+          </p>
+
+
+          <a
+            class="primary-btn"
+            href="https://drive.google.com/file/d/1t0tZTRSP3pll7dXjtulDvA_urKYj9k3_/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            📖 Abrir manual
+
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           QR
+      ================================================== -->
+
+      <section id="qr" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            ACCESO DIGITAL
+          </p>
+
+          <h2>
+            Código QR del equipo
+          </h2>
+
+          <p>
+            Escanea el código para acceder a la información
+            digital del iVent™201.
+          </p>
+
+        </div>
+
+
+        <div class="about-box qr-box">
+
+          <div class="card-icon">
+            📱
+          </div>
+
+          <h3>
+            Consulta rápida del equipo
+          </h3>
+
+          <p>
+            El código QR permite acceder desde un dispositivo
+            móvil a la plataforma digital del iVent™201.
+          </p>
+
+
+          <div id="qrCode" class="qr-placeholder">
+            Cargando QR...
+          </div>
+
+
+          <p>
+            <strong>
+              Código QR generado para acceso rápido
+              a la plataforma técnica.
+            </strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           ACERCA DEL PROYECTO
+      ================================================== -->
+
+      <section id="acerca" class="section">
+
+        <div class="section-header">
+
+          <p class="eyebrow">
+            PROYECTO UNIVERSITARIO
+          </p>
+
+          <h2>
+            Acerca de la plataforma
+          </h2>
+
+        </div>
+
+
+        <div class="about-box">
+
+          <div class="card-icon">
+            🧬
+          </div>
+
+          <h3>
+            Plataforma iVent™201
+          </h3>
+
+          <p>
+            Proyecto académico desarrollado en el área
+            de Ingeniería Biomédica para organizar y
+            consultar información relacionada con la
+            gestión de un equipo de ventilación mecánica.
+          </p>
+
+          <p>
+            La plataforma integra información técnica,
+            funcionamiento, componentes, mantenimiento,
+            seguridad, documentación y asistencia para
+            facilitar la consulta del equipo biomédico.
+          </p>
+
+
+          <div class="student">
+
+            <span>
+              PROYECTO
+            </span>
+
+            <strong>
+              Ingeniería Biomédica
+            </strong>
+
+          </div>
+
+
+          <div class="student">
+
+            <span>
+              EQUIPO ANALIZADO
+            </span>
+
+            <strong>
+              GE Healthcare / VersaMed iVent™201
+            </strong>
+
+          </div>
+
+
+          <div class="student">
+
+            <span>
+              INTEGRANTES DEL PROYECTO
+            </span>
+
+            <strong>
+              Duban Pardo<br>
+              Cristian Muñoz<br>
+              Natalia Quiceno<br>
+              Laura Pulido
+            </strong>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+  </div>
+
+</div>
+    <script src="/script.js"></script>
+  </body>
+
+</html>
